@@ -1,100 +1,21 @@
 ---
-import type { Image } from 'astro:assets';
 import Card from '../components/Card.astro'
 ---
-<section class="white">
-    <img src="/avatar.jpeg" alt="" srcset="">
-    <h1 class="Title">Angel Eduardo Velazquez Morales</h1>
-    <h2 class="Subtitle">Desarrollador Web</h2>
-    <h5 class="Name">Ingeniero en Sistemas Computacionales</h5>
+<section class="flex flex-col justify-center items-center h-screen w-100 bg-white text-black">
+    <img class="rounded-full mb-4 w-52 h-52" src="/avatar.jpeg" alt="" srcset="">
+    <h1 class="text-5xl font-semibold">Angel Eduardo Velazquez Morales</h1>
+    <h2 class="text-3xl font-normal">Desarrollador Full Stack</h2>
+    <h5 class="text-xl font-light">Ingeniero en Sistemas Computacionales</h5>
 </section>
-<section class="black">
-    <h1 class="Subtitle">Hola!</h1>
+<section class="flex flex-col justify-center items-center h-screen w-100 bg-black text-white">
+    <h1 class="text-3xl font-normal">Hola!</h1>
     <p>Soy un Ingeniero en proceso con un amplia trayectoria en el <strong>mundo de la programación</strong> </p>
     <p>Me gusta aprender cosas nuevas y estar en constante crecimiento</p>
-    <div class="slider">
-        <ul>
-            <li class="slider-item">
-                <Card
-                    title=""
-                    srcImg=""
-                    description=""
-                /></li>
-            <li class="slider-item">
-                <Card
-                    title=""
-                    srcImg=""
-                    description=""
-                /></li>
-            <li class="slider-item">
-                <Card
-                    title=""
-                    srcImg=""
-                    description=""
-                /></li>
-            <li class="slider-item">
-                <Card
-                    title=""
-                    srcImg=""
-                    description=""
-                /></li>
-            <li class="slider-item">
-                <Card
-                    title=""
-                    srcImg=""
-                    description=""
-                /></li>
-            <li class="slider-item">
-                <Card
-                    title=""
-                    srcImg=""
-                    description=""
-                /></li>
-        </ul>
+    <div>
+        <h1 class="text-3xl font-normal pt-8">Tecnologias</h1>
     </div>
-
 </section>
 
-
 <style>
-    section{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        width: 100%;
-    }
-    section img{
-        width: 200px;
-        height: 200px;
-        border-radius: 50%;
-        margin-bottom: 1rem;
-    }
-    .white{
-        background-color: #f5f5f5;
-        color: #333;
-    }
-    .black{
-        background-color: rgb(0,0,0);
-        color: #f5f5f5;
-    }
-
-    .Title {
-        font-size: 3rem;
-        font-weight: 700;
-        color: inherit;
-    }
-    .Subtitle {
-        font-size: 2rem;
-        font-weight: 400;
-        color: inherit;
-    }
-    .Name {
-        font-size: 1.5rem;
-        font-weight: 300;
-        color: inherit;
-    }
-
 
 </style>
