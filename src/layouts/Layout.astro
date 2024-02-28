@@ -5,11 +5,11 @@ interface Props {
 const { title } = Astro.props;
 
 import Header from '../components/Header.astro';
-import Info from '../components/Info.astro';
+import Button from '../components/Button.astro';
+import Card from '../components/Card.astro';
+
 import '@fontsource-variable/quicksand';
 ---
-
-
 
 <!doctype html>
 <html lang="es">
@@ -23,18 +23,69 @@ import '@fontsource-variable/quicksand';
 	</head>
 	<body>
 		<Header />
-		<Info />
-		<slot />
+		<section class="flex flex-col justify-center items-center mt-10 ">
+			<img class="rounded-full mb-4 w-52 h-52" src="/avatar.jpeg" alt="" srcset="">
+			<h1 class="text-5xl font-semibold">Angel Eduardo Velazquez Morales</h1>
+			<!-- <h2 class="text-3xl font-normal">Desarrollador Full Stack</h2> -->
+			<h5 class="text-xl font-light">Ingeniero en Sistemas Computacionales</h5>
+			<div class="flex">
+				<Button title="Github" link="https://github.com/KrazyLemon" />
+				<Button title="Linkedin" link="https://www.linkedin.com/in/angel-eduardo-velazquez-morales/" />
+			</div>
+		</section>
+		<section class="mt-10">
+			<h2 class="text-3xl font-semibold m-1">Sobre mi</h2>
+			<p class="text-lg font-light m-1">
+				Desarrollador Full Stack con experiencia en el desarrollo de aplicaciones web. 
+				Apasionado por la tecnología y el desarrollo de software. 
+				En constante aprendizaje y en busca de nuevos retos.
+			</p>
+			<h2 class="text-3xl font-semibold m-1 ">Habilidades</h2>
+			<div class="flex">
+				<div class="basis-1/2 flex flex-col justify-center align-middle items-center border rounded-md m-1">
+					<h3 class="text-2xl font-semibold m-1">Frontend</h2>
+					<ul class="m-2 grid grid-cols-3 gap-1">
+						
+						<li><Card title="Astro" img="/svg/front/astro.svg" /></li>
+						<li><Card title="React" img="/svg/front/react.svg" /></li>
+						<li><Card title="Tailwind" img="/svg/front/tw.svg" /></li>
+						
+						<li><Card title="JavaScript" img="/svg/front/js.svg" /></li>
+						<li><Card title="Vite" img="/svg/front/vite.svg" /></li>
+						<!-- <li><Card title="Tailwind" img="/svg/front/tw.svg" /></li> -->
+						
+						<!-- <li><Card title="Astro" img="/svg/front/astro.svg" /></li>
+						<li><Card title="React" img="/svg/front/react.svg" /></li>
+						<li><Card title="Tailwind" img="/svg/front/tw.svg" /></li> -->
+					</ul>
+				</div>
+				<div class="basis-1/2 flex flex-col justify-center align-middle items-center border rounded-md m-1">
+					<h3 class="text-2xl font-semibold m-1">Backend</h2>
+						<ul class="m-2 grid grid-cols-3 gap-1">
+							
+							<li><Card title="Java" img="/svg/back/java.svg" /></li>
+							<li><Card title="Spring" img="/svg/back/spring.svg" /></li>
+							<li><Card title="Express" img="/svg/back/ex.svg" /></li>
+							
+							<li><Card title="Express" img="/svg/back/js.svg" /></li>
+							<li><Card title="Python" img="/svg/back/py.svg" /></li>
+							<li><Card title="" img="/svg/back/tw.svg" /></li>
+							
+							<li><Card title="Astro" img="/svg/back/astro.svg" /></li>
+							<li><Card title="React" img="/svg/back/react.svg" /></li>
+							<li><Card title="Tailwind" img="/svg/back/tw.svg" /></li>
+						</ul>
+				</div>
+			</div>
+		</section>
+		<div class="pt-10"></div>
 	</body>
 </html>
 <style is:global >
-	
-
 	body{
-		background: #000;
-		color: #000;
 		font-family: 'Quicksand Variable', sans-serif;
-		/* max-width: 1200px; */
+		max-width: 1200px;
+		margin: auto;
+		padding: 0%;
 	}
-
 </style>

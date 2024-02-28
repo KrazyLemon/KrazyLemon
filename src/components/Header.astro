@@ -1,48 +1,14 @@
 ---
 
 ---
-    <nav>
-        <ul>
-            <li><a href="/">Inicio</a></li>
-            <li><a href="/about">Sobre mi</a></li>
-            <li><a href="/proyects">Proyectos</a></li>
-            <li><a href="/contact">Contacto</a></li>
+    <nav class="flex  justify-between p-2">
+        <div class="basis-1/4 flex">
+            <img alt="Logo" class="rounded-full w-8 h-8" src="avatar.jpeg"></img>
+            <h1 class="mx-1 font-bold text-lg">Angel Velazquez</h1>
+        </div>
+        <ul class="basis-1/4 flex justify-around p-1">
+            <li class="mx-2 font-medium"><a class="hover:text-cyan-400" href="/proyects">Proyectos</a></li>
+            <li class="mx-2 font-medium"><a class="hover:text-cyan-400" href="/about">Sobre mi</a></li>
+            <li class="mx-2 font-medium"><a class="hover:text-cyan-400" href="/contact">Contacto</a></li>
         </ul>
     </nav>
-
-<style>
-    nav{
-        /*  Position    */
-        z-index: 1000;
-        width: 70%;
-        margin-top: 1%;
-        margin-left: 15%;
-        padding: 0%;
-        /*  Style   */
-        color: rgb(255,255,255);
-        font-size: 1.2rem;
-
-        /*background: rgb(1,127,150);*/
-        background: linear-gradient(90deg, rgb(0, 56, 66) 0%, rgba(87,7,51,1) 100%);
-        border-radius: 1rem;
-        backdrop-filter: blur(10px);
-        position: fixed;
-
-    }
-    nav ul{
-        display: flex;
-        justify-content: space-between;
-        list-style: none;
-        width: 100%;  
-        padding: 1% 15%; 
-    }
-
-    nav ul li a:hover{
-        text-decoration: underline;
-        
-    }
-</style>
-
-<script>
-    
-</script>
