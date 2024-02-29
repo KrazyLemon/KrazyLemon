@@ -42,40 +42,41 @@ import '@fontsource-variable/quicksand';
 			</p>
 			<h2 class="text-3xl font-semibold m-1 ">Habilidades</h2>
 			<div class="flex">
-				<div class="basis-1/2 flex flex-col justify-center align-middle items-center border rounded-md m-1">
+				<div class="basis-1/4 flex flex-col justify-center align-middle items-center rounded-md m-1 bg-white/10 ">
 					<h3 class="text-2xl font-semibold m-1">Frontend</h2>
 					<ul class="m-2 grid grid-cols-3 gap-1">
-						
 						<li><Card title="Astro" img="/svg/front/astro.svg" /></li>
 						<li><Card title="React" img="/svg/front/react.svg" /></li>
 						<li><Card title="Tailwind" img="/svg/front/tw.svg" /></li>
-						
-						<li><Card title="JavaScript" img="/svg/front/js.svg" /></li>
-						<li><Card title="Vite" img="/svg/front/vite.svg" /></li>
-						<!-- <li><Card title="Tailwind" img="/svg/front/tw.svg" /></li> -->
-						
-						<!-- <li><Card title="Astro" img="/svg/front/astro.svg" /></li>
-						<li><Card title="React" img="/svg/front/react.svg" /></li>
-						<li><Card title="Tailwind" img="/svg/front/tw.svg" /></li> -->
 					</ul>
 				</div>
-				<div class="basis-1/2 flex flex-col justify-center align-middle items-center border rounded-md m-1">
+				
+				<div class="basis-1/2 flex flex-col justify-center align-middle items-center rounded-md m-1 bg-white/10 ">
 					<h3 class="text-2xl font-semibold m-1">Backend</h2>
 						<ul class="m-2 grid grid-cols-3 gap-1">
-							
 							<li><Card title="Java" img="/svg/back/java.svg" /></li>
 							<li><Card title="Spring" img="/svg/back/spring.svg" /></li>
 							<li><Card title="Express" img="/svg/back/ex.svg" /></li>
-							
-							<li><Card title="Express" img="/svg/back/js.svg" /></li>
-							<li><Card title="Python" img="/svg/back/py.svg" /></li>
-							<li><Card title="" img="/svg/back/tw.svg" /></li>
-							
-							<li><Card title="Astro" img="/svg/back/astro.svg" /></li>
-							<li><Card title="React" img="/svg/back/react.svg" /></li>
-							<li><Card title="Tailwind" img="/svg/back/tw.svg" /></li>
 						</ul>
 				</div>
+			</div>
+			<div class="flex">
+				<div class="basis-1/2 flex flex-col justify-center align-middle items-center rounded-md m-1 bg-white/10 ">
+					<h3 class="text-2xl font-semibold m-1">Databases</h2>
+						<ul class="m-2 grid grid-cols-3 gap-1">
+							<li><Card title="Java" img="/svg/back/java.svg" /></li>
+							<li><Card title="Spring" img="/svg/back/spring.svg" /></li>
+							<li><Card title="Express" img="/svg/back/ex.svg" /></li>
+						</ul>
+				</div> 
+				<div class="basis-1/2 flex flex-col justify-center align-middle items-center rounded-md m-1 bg-white/10 ">
+					<h3 class="text-2xl font-semibold m-1">Extra</h2>
+						<ul class="m-2 grid grid-cols-3 gap-1">
+							<li><Card title="Java" img="/svg/back/java.svg" /></li>
+							<li><Card title="Spring" img="/svg/back/spring.svg" /></li>
+							<li><Card title="Express" img="/svg/back/ex.svg" /></li>
+						</ul>
+				</div> 
 			</div>
 		</section>
 		<div class="pt-10"></div>
@@ -85,7 +86,19 @@ import '@fontsource-variable/quicksand';
 	body{
 		font-family: 'Quicksand Variable', sans-serif;
 		max-width: 1200px;
+
+		
+		color: white;
+
 		margin: auto;
 		padding: 0%;
+		
+		background: rgb(1,0,11);
+		background: -moz-linear-gradient(270deg, rgba(1,0,11,1) 53%, rgba(0,0,52,1) 100%);
+		background: -webkit-linear-gradient(270deg, rgba(1,0,11,1) 53%, rgba(0,0,52,1) 100%);
+		background: linear-gradient(270deg, rgba(1,0,11,1) 53%, rgba(0,0,52,1) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#01000b",endColorstr="#000034",GradientType=1);
 	}
+
+	
 </style>

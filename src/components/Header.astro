@@ -1,14 +1,31 @@
 ---
 
 ---
-    <nav class="flex  justify-between p-2">
-        <div class="basis-1/4 flex">
+    <nav class="flex  pt-2 backdrop-blur-sm ">
+        <div class="flex basis-1/6 ">
             <img alt="Logo" class="rounded-full w-8 h-8" src="avatar.jpeg"></img>
-            <h1 class="mx-1 font-bold text-lg">Angel Velazquez</h1>
+            <h1 class="mx-1 font-bold text-lg">Krazy</h1>
         </div>
-        <ul class="basis-1/4 flex justify-around p-1">
+        <ul class="flex basis-4/6 pt-1  justify-center ">
             <li class="mx-2 font-medium"><a class="hover:text-cyan-400" href="/proyects">Proyectos</a></li>
             <li class="mx-2 font-medium"><a class="hover:text-cyan-400" href="/about">Sobre mi</a></li>
             <li class="mx-2 font-medium"><a class="hover:text-cyan-400" href="/contact">Contacto</a></li>
         </ul>
+        <div class="flex basis-1/6 justify-end" >
+            <select class="p-1 mx-2 font-medium bg-gray-800 rounded-md ">
+                <option>Español</option>
+                <option>English</option>
+            </select>
+            <a class="scale px-3 py-1 mx-2 font-medium  rounded-md bg-gradient-to-r from-cyan-500 via-cyan-800 to-slate-800 ">Resume</a>
+        </div>
     </nav>
+
+    <style>
+        .scale {
+            transition: all 0.3s ease;
+        }
+        .scale:hover {
+            transform: scale(1.1);
+        }
+
+    </style>

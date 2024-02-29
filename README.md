@@ -1,11 +1,3 @@
-
-# Profesional Portfolio
-
-It's My personal portfolio web
-
-
-
-
 ## 🚀 About Me
 
 Hi My name is Angel Velazquez 
