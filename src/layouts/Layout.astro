@@ -24,62 +24,60 @@ import '@fontsource-variable/quicksand';
 	<body>
 		<Header />
 		<section class="flex flex-col justify-center items-center mt-10 ">
-			<img class="rounded-full mb-4 w-52 h-52" src="/avatar.jpeg" alt="" srcset="">
-			<h1 class="text-5xl font-semibold">Angel Eduardo Velazquez Morales</h1>
+			<img class="rounded-full mb-4 w-52 h-52" src="/avatar.jpeg" alt="Logo" >
+			<h1 class="text-5xl font-semibold ">Angel Eduardo Velazquez Morales</h1>
 			<!-- <h2 class="text-3xl font-normal">Desarrollador Full Stack</h2> -->
-			<h5 class="text-xl font-light">Ingeniero en Sistemas Computacionales</h5>
+			<h5 class="text-2xl font-light bg-gradient-to-r from-blue-400 via-green-300 to-indigo-400 text-transparent bg-clip-text py-1">Ingeniero en Sistemas Computacionales</h5>
 			<div class="flex">
 				<Button title="Github" link="https://github.com/KrazyLemon" />
 				<Button title="Linkedin" link="https://www.linkedin.com/in/angel-eduardo-velazquez-morales/" />
 			</div>
 		</section>
-		<section class="mt-10">
-			<h2 class="text-3xl font-semibold m-1">Sobre mi</h2>
-			<p class="text-lg font-light m-1">
-				Desarrollador Full Stack con experiencia en el desarrollo de aplicaciones web. 
-				Apasionado por la tecnología y el desarrollo de software. 
-				En constante aprendizaje y en busca de nuevos retos.
-			</p>
-			<h2 class="text-3xl font-semibold m-1 ">Habilidades</h2>
-			<div class="flex">
-				<div class="basis-1/4 flex flex-col justify-center align-middle items-center rounded-md m-1 bg-white/10 ">
-					<h3 class="text-2xl font-semibold m-1">Frontend</h2>
-					<ul class="m-2 grid grid-cols-3 gap-1">
-						<li><Card title="Astro" img="/svg/front/astro.svg" /></li>
-						<li><Card title="React" img="/svg/front/react.svg" /></li>
-						<li><Card title="Tailwind" img="/svg/front/tw.svg" /></li>
-					</ul>
-				</div>
-				
-				<div class="basis-1/2 flex flex-col justify-center align-middle items-center rounded-md m-1 bg-white/10 ">
-					<h3 class="text-2xl font-semibold m-1">Backend</h2>
-						<ul class="m-2 grid grid-cols-3 gap-1">
-							<li><Card title="Java" img="/svg/back/java.svg" /></li>
-							<li><Card title="Spring" img="/svg/back/spring.svg" /></li>
-							<li><Card title="Express" img="/svg/back/ex.svg" /></li>
-						</ul>
-				</div>
-			</div>
-			<div class="flex">
-				<div class="basis-1/2 flex flex-col justify-center align-middle items-center rounded-md m-1 bg-white/10 ">
-					<h3 class="text-2xl font-semibold m-1">Databases</h2>
-						<ul class="m-2 grid grid-cols-3 gap-1">
-							<li><Card title="Java" img="/svg/back/java.svg" /></li>
-							<li><Card title="Spring" img="/svg/back/spring.svg" /></li>
-							<li><Card title="Express" img="/svg/back/ex.svg" /></li>
-						</ul>
-				</div> 
-				<div class="basis-1/2 flex flex-col justify-center align-middle items-center rounded-md m-1 bg-white/10 ">
-					<h3 class="text-2xl font-semibold m-1">Extra</h2>
-						<ul class="m-2 grid grid-cols-3 gap-1">
-							<li><Card title="Java" img="/svg/back/java.svg" /></li>
-							<li><Card title="Spring" img="/svg/back/spring.svg" /></li>
-							<li><Card title="Express" img="/svg/back/ex.svg" /></li>
-						</ul>
-				</div> 
+		<section class="mt-10 flex align-middle w-full m-auto bg-opacity-5 bg-white rounded-md p-2">
+			<img class="w-52 h-52" src="/avatar.jpeg" alt="logo" >
+			<div class="flex flex-col justify-center mx-2">
+				<h2 class="text-3xl font-semibold m-1">Sobre mi</h2>
+				<p class="text-lg font-light m-1 ">
+					Ingeniero en Sistemas con experiencia en desarrollo de software,
+					soy una persona apasionada por la tecnología y el desarrollo de 
+					web,he trabajado en proyectos de desarrollo de software,
+					soy una persona autodidacta y me gusta aprender cosas nuevas.
+				</p>
 			</div>
 		</section>
-		<div class="pt-10"></div>
+		
+		<section class="mt-5 flex flex-col align-middle w-full  p-2 mb-2">
+			<h2 class="flex justify-center text-3xl font-semibold m-1 mb-5">Habilidades</h2>
+			<div class="grid grid-cols-5 grid-rows-4 gap-3">
+				<div class="row-start-1 row-end-4 col-start-1 col-end-3 rounded-md flex justify-center border border-white/5  bg-gradient-to-r from-blue-400/10  to-slate-800/10">
+					<Card img="svg/html.svg" title="HTML" />
+					<Card img="svg/css.svg" title="CSS" />
+					<Card img="svg/js.svg" title="JavaScript" />
+					<Card img="svg/tw.svg" title="TailWind Css" />
+					<Card img="svg/react.svg" title="React" />
+					<Card img="svg/astro.svg" title="Astro" />
+				</div>
+				<div class="row-start-1 row-end-3 col-start-3 col-end-6 rounded-md flex justify-center border border-white/5 bg-gradient-to-r from-blue-400/10  to-slate-800/10 ">
+					<Card img="svg/spring.svg" title="Spring" />
+					<Card img="svg/ex.svg" title="Express" />
+					<Card img="svg/psql.svg" title="PostgreSQL" />
+					<Card img="svg/sql.svg" title="SQL" />
+				</div>
+				<div class="row-start-3 row-end-4 col-start-3 col-end-6 rounded-md flex justify-center border border-white/5 bg-gradient-to-r from-blue-400/10  to-slate-800/10">
+					<Card img="svg/java.svg" title="java" />
+					<Card img="svg/py.svg" title="Python" />
+				</div>
+				<div class="row-start-4 row-end-5 col-start-1 col-end-6 rounded-md flex justify-center border border-white/5 bg-gradient-to-r from-blue-400/10  to-slate-800/10">
+					<Card img="svg/git.svg" title="Git" />
+					<Card img="svg/github.svg" title="GitHub" />
+					<Card img="svg/postman.svg" title="Postman" />
+					<Card img="svg/docker.svg" title="Docker" />
+					<Card img="svg/aws.svg" title="AWS" />
+				</div>
+
+			</div>
+		</section>
+		
 	</body>
 </html>
 <style is:global >
