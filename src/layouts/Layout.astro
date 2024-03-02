@@ -33,7 +33,33 @@ import '@fontsource-variable/quicksand';
 				<Button title="Linkedin" link="https://www.linkedin.com/in/angel-eduardo-velazquez-morales/" />
 			</div>
 		</section>
-		<section class="mt-10 flex align-middle w-full m-auto bg-opacity-5 bg-white rounded-md p-2">
+		
+		<section class="flex flex-col justify-center">
+			<h1 class="flex justify-center text-3xl font-light m-1">Proyectos</h1>
+			<div class="grid grid-cols-4 grid-rows-3 gap-2">
+				<div class="row-start-1 row-end-3 col-start-1 col-end-2 rounded-md flex flex-col justify-center border border-white/5  bg-gradient-to-r from-blue-400/10  to-slate-800/10 p-2 ">
+					1
+				</div>
+				<div class="row-start-1 row-end-2 col-start-2 col-end-4 rounded-md flex flex-col justify-center border border-white/5  bg-gradient-to-r from-blue-400/10  to-slate-800/10 p-2">
+					2
+				</div>
+				<div class="row-start-1 row-end-3 col-start-4 col-end-5 rounded-md flex flex-col justify-center border border-white/5  bg-gradient-to-r from-blue-400/10  to-slate-800/10 p-2">
+					3
+				</div>
+				<div class="row-start-2 row-end-3 col-start-2 col-end-4 rounded-md flex flex-col justify-center border border-white/5  bg-gradient-to-r from-blue-400/10  to-slate-800/10 p-2">
+					4
+				</div>
+				<div class="row-start-3 row-end-4 col-start-1 col-end-3 rounded-md flex flex-col justify-center border border-white/5  bg-gradient-to-r from-blue-400/10  to-slate-800/10 p-2">
+					5
+				</div>
+				<div class="row-start-3 row-end-4 col-start-3 col-end-5 rounded-md flex flex-col justify-center border border-white/5  bg-gradient-to-r from-blue-400/10  to-slate-800/10 p-2">
+					6
+				</div>
+			</div>
+
+		</section>
+
+		<!-- <section class="mt-10 flex align-middle w-full m-auto bg-opacity-5 bg-white rounded-md p-2">
 			<img class="w-52 h-52" src="/avatar.jpeg" alt="logo" >
 			<div class="flex flex-col justify-center mx-2">
 				<h2 class="text-3xl font-semibold m-1">Sobre mi</h2>
@@ -44,35 +70,48 @@ import '@fontsource-variable/quicksand';
 					soy una persona autodidacta y me gusta aprender cosas nuevas.
 				</p>
 			</div>
-		</section>
+		</section> -->
 		
 		<section class="mt-5 flex flex-col align-middle w-full  p-2 mb-2">
-			<h2 class="flex justify-center text-3xl font-semibold m-1 mb-5">Habilidades</h2>
-			<div class="grid grid-cols-5 grid-rows-4 gap-3">
-				<div class="row-start-1 row-end-4 col-start-1 col-end-3 rounded-md flex justify-center border border-white/5  bg-gradient-to-r from-blue-400/10  to-slate-800/10">
-					<Card img="svg/html.svg" title="HTML" />
-					<Card img="svg/css.svg" title="CSS" />
-					<Card img="svg/js.svg" title="JavaScript" />
-					<Card img="svg/tw.svg" title="TailWind Css" />
-					<Card img="svg/react.svg" title="React" />
-					<Card img="svg/astro.svg" title="Astro" />
+			<h2 class="flex justify-center text-3xl font-light m-1 mb-5">Habilidades</h2>
+			<div class="grid grid-cols-5 grid-rows-2 gap-3">
+				<div class="row-start-1 row-end-3 col-start-1 col-end-3 rounded-md flex flex-col justify-center border border-white/5  bg-gradient-to-r from-blue-400/10  to-slate-800/10 p-2">
+					<h1 class="flex justify-center text-3xl font-light bg-gradient-to-r from-blue-700 to-green-800  text-transparent bg-clip-text ">Frontend</h1>				
+					<div class="flex flex-row flex-wrap justify-center w-2/3 m-auto">
+						<Card img="svg/html.svg" title="HTML" />
+						<Card img="svg/css.svg" title="CSS" />
+						<Card img="svg/js.svg" title="JS" />
+						<Card img="svg/tw.svg" title="Tailwind" />
+						<Card img="svg/react.svg" title="React" />
+						<Card img="svg/astro.svg" title="Astro" />
+					</div>
 				</div>
-				<div class="row-start-1 row-end-3 col-start-3 col-end-6 rounded-md flex justify-center border border-white/5 bg-gradient-to-r from-blue-400/10  to-slate-800/10 ">
-					<Card img="svg/spring.svg" title="Spring" />
-					<Card img="svg/ex.svg" title="Express" />
-					<Card img="svg/psql.svg" title="PostgreSQL" />
-					<Card img="svg/sql.svg" title="SQL" />
+				<div class="row-start-1 row-end-2 col-start-3 col-end-6 rounded-md flex flex-col justify-center border border-white/5 bg-gradient-to-r from-blue-400/10  to-slate-800/10 p-2">
+					<h1 class="flex justify-center text-3xl font-light bg-gradient-to-r from-blue-700 to-green-800  text-transparent bg-clip-text ">Backend</h1>
+					<div class="flex flex-row flex-wrap justify-center w-2/3 m-auto ">
+						<Card img="svg/spring.svg" title="Spring" />
+						<Card img="svg/ex.svg" title="Express" />
+						<Card img="svg/psql.svg" title="PostgreSQL" />
+						<Card img="svg/sql.svg" title="MySQL" />
+					</div>
 				</div>
-				<div class="row-start-3 row-end-4 col-start-3 col-end-6 rounded-md flex justify-center border border-white/5 bg-gradient-to-r from-blue-400/10  to-slate-800/10">
-					<Card img="svg/java.svg" title="java" />
-					<Card img="svg/py.svg" title="Python" />
+				<div class="row-start-2 row-end-3 col-start-3 col-end-6 rounded-md flex flex-col justify-center border border-white/5 bg-gradient-to-r from-blue-400/10  to-slate-800/10 p-2">
+					<h1 class="flex justify-center text-3xl font-light bg-gradient-to-r from-blue-700 to-green-800  text-transparent bg-clip-text ">Lenguajes de programacion</h1>
+					<div class="flex flex-row flex-wrap justify-center w-2/3 m-auto ">
+						<Card img="svg/java.svg" title="java" />
+						<Card img="svg/cpp.svg" title="C++" />
+						<Card img="svg/py.svg" title="Python" />
+					</div>
 				</div>
-				<div class="row-start-4 row-end-5 col-start-1 col-end-6 rounded-md flex justify-center border border-white/5 bg-gradient-to-r from-blue-400/10  to-slate-800/10">
-					<Card img="svg/git.svg" title="Git" />
-					<Card img="svg/github.svg" title="GitHub" />
-					<Card img="svg/postman.svg" title="Postman" />
-					<Card img="svg/docker.svg" title="Docker" />
-					<Card img="svg/aws.svg" title="AWS" />
+				<div class="row-start-3 row-end-4 col-start-1 col-end-6 rounded-md flex flex-col justify-center border border-white/5 bg-gradient-to-r from-blue-400/10  to-slate-800/10 p-2">
+					<h1 class="flex justify-center text-3xl font-light bg-gradient-to-r from-blue-700 to-green-800  text-transparent bg-clip-text ">Utilidades</h1>
+					<div class="flex flex-row flex-wrap justify-center w-2/3 m-auto ">
+						<Card img="svg/git.svg" title="Git" />
+						<Card img="svg/github.svg" title="GitHub" />
+						<Card img="svg/postman.svg" title="Postman" />
+						<Card img="svg/docker.svg" title="Docker" />
+						<Card img="svg/aws.svg" title="AWS" />
+					</div>
 				</div>
 
 			</div>
