@@ -1,10 +1,10 @@
-# 👋 Hola, soy Ángel Velázquez  
+# 👋 Hola, soy Ángel Velázquez (KrazyLemon) Desarrollador Full Stack
 
-🎓 Estudiante de **Ingeniería en Sistemas Computacionales** (9° semestre).  
+🎓 Graduado de **Ingeniería en Sistemas Computacionales** .  
 💻 Apasionado por el desarrollo de software, optimización de procesos y la resolución creativa de problemas.  
 🚀 Actualmente trabajando en proyectos como:  
+- 📅 **Plataforma web de generación automática de horarios** con **Java (Spring Boot)** y **React**. 
 - 🌱 **Verdetech**: sistema de monitoreo y riego automático con IoT y chatbot.  
-- 📅 **Plataforma web de generación automática de horarios** con **Java (Spring Boot)** y **React**.  
 
 ---
 
@@ -25,9 +25,9 @@
 
 ## 📊 Estadísticas de GitHub  
 
-![Ángel's GitHub stats](https://github-readme-stats.vercel.app/api?username=angelvelazquez&show_icons=true&theme=tokyonight)  
+![Ángel's GitHub stats](https://github-readme-stats.vercel.app/api?username=Krazylemon&show_icons=true&theme=tokyonight)  
 
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=angelvelazquez&layout=compact&theme=tokyonight)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Krazylemon&layout=compact&theme=tokyonight)
 
 ---
 
