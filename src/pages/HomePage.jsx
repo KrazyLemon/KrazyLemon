@@ -5,10 +5,13 @@ import Footer from "../components/Footer";
 import Chip from "../components/Chip";
 import { useTranslation } from "react-i18next";
 import Skill from "../components/Skill";
+import ContactForm from "../components/ContactForm";
+
+
 
 export default function HomePage() {
 
-    const {t} = useTranslation();
+    const { t } = useTranslation();
 
     return (
         <>
@@ -27,8 +30,8 @@ export default function HomePage() {
                     <img src="/banner.webp" alt="banner" className="h-[800px] object-cover w-[500px] rounded" />
                 </div>
             </div>
-            <div className=" flex flex-col justify-center items-center mb-8">
-                <h1 className="text-5xl overflow-hidden py-3 font-bold">{t("work")}</h1>
+            <div id="work" className="flex flex-col justify-center items-center mb-8">
+                <h1 className="text-5xl overflow-hidden py-3 font-bold z-40">{t("work")}</h1>
                 <h2 className="text-xl overflow-hidden font-light pb-2">{t("work_subtitle")}</h2>
                 <div className="flex w-full flex-wrap justify-center gap-2">
                     <Card
@@ -83,8 +86,8 @@ export default function HomePage() {
                     </Card>
                 </div>
             </div>
-            <div className=" flex flex-col justify-center items-center mb-8 py-4 w-3/4 mx-auto">
-                <h1 className="text-5xl self-center overflow-hidden font-bold text-center">{t("about")}</h1>
+            <div id="about" className=" flex flex-col justify-center items-center mb-8 py-4 w-3/4 mx-auto">
+                <h1 className="text-5xl overflow-hidden py-3 font-bold z-40">{t("about")}</h1>
                 <h2 className="text-xl overflow-hidden font-light text-center pb-2">{t("about_subtitle")}</h2>
                 <div className="flex w-full justify-center pt-2 ">
                     <div className="w-1/2 bg-white p-4 rounded me-4">
@@ -108,12 +111,12 @@ export default function HomePage() {
                                     <li className="italic font-light">{t("course_2")}</li>
                                 </ul>
                             </div>
-                        </div>          
+                        </div>
                         <div className="flex flex-col gap-2">
                             <h1 className="text-3xl font-semibold mb-4">{t("skills")}</h1>
                             <div className="grid grid-cols-8 gap-2">
-                                <Skill name="Java" > 
-                                   <Icon icon="devicon:java" width="40" height="40" />
+                                <Skill name="Java" >
+                                    <Icon icon="devicon:java" width="40" height="40" />
                                 </Skill>
                                 <Skill name="JavaScript">
                                     <Icon icon="devicon:javascript" width="40" height="40" />
@@ -157,7 +160,7 @@ export default function HomePage() {
                                 <Skill name="Linux">
                                     <Icon icon="devicon:linux" width="40" height="40" />
                                 </Skill>
-                                
+
                             </div>
                         </div>
                     </div>
@@ -165,11 +168,10 @@ export default function HomePage() {
                 </div>
 
             </div>
-            <div className="w-full h-screen flex flex-col justify-top items-center my-8">
-                <h1 className="text-3xl font-semibold mb-4" >{t("contact")}</h1>
-                <p>Email:
-                    <a href="mailto:" className="text-blue-500 hover:underline"> </a>
-                </p>
+            <div id="contact" className="w-full h-screen flex flex-col justify-top items-center my-8">
+                <h1 className="text-5xl overflow-hidden py-3 font-bold z-40" >{t("contact")}</h1>
+                <h2 className="text-xl overflow-hidden font-light text-center pb-2">{t("contact_subtitle")}</h2>
+                <ContactForm />
             </div>
             <Footer />
         </>

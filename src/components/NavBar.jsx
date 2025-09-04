@@ -13,10 +13,10 @@ export default function NavBar() {
    
     return (
         <div className="bg-gray-200 w-full h-screen p-2">
-            <nav className="flex justify-end w-full font-medium absolute top-0 right-0 z-50 p-3 backdrop-blur-3xl">
-                <Link href="/">{t("work")}</Link>
-                <Link href="/">{t("about")}</Link>
-                <Link href="/">{t("contact")}</Link>
+            <nav className="flex justify-end w-full font-medium absolute top-0 right-0 z-30 p-3 backdrop-blur-3xl">
+                <Link href="#work">{t("work")}</Link>
+                <Link href="#about">{t("about")}</Link>
+                <Link href="#contact">{t("contact")}</Link>
                 <Selector onChange={changeLanguage} />
             </nav>
             <Outlet />

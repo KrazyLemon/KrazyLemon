@@ -27,31 +27,36 @@ i18next.use(initReactI18next).init({
                 p2_title: "IoT Irrigation System connected to a Mobile App",
                 p2_desc: "This school project is an automated irrigation system that uses moisture sensors and a mobile app" +
                     " to efficiently control plant watering.",
-                p3_title: "Website for a Trading Company of Industrial Products",   
+                p3_title: "Website for a Trading Company of Industrial Products",
                 p3_desc: "This was the first website I developed, it is a static website for a trading company of different types" +
                     " of products for the industry. It was developed with HTML, CSS, and JavaScript. This website is no longer in use.",
                 p4_title: "User and Task REST API",
                 p4_desc: "This project is a REST API developed with Spring Boot and Spring Security that allows managing users and their associated tasks." +
                     " It implements authentication and authorization with JWT. Orchestrated with Docker. This API currently does not have a user interface as it is under development.",
-                about_subtitle:"A Passionate Developer Crafting Digital Experiences",
-                about_desc:"Hello! I'm Angel Velazquez, a dedicated Fullstack Developer with a passion for creating innovative digital solutions. With a strong foundation in both "+ 
-                "frontend and backend technologies, I specialize in building responsive and user-friendly web applications. My expertise includes working with frameworks like React " +
-                "and Spring Boot, as well as databases such as MongoDB and MySQL. I thrive in collaborative environments and enjoy tackling complex challenges to deliver high-quality " +
-                "software. When I'm not coding, I love exploring new technologies and staying updated with industry trends. Let's connect and create something amazing together!",
+                about_subtitle: "A Passionate Developer Crafting Digital Experiences",
+                about_desc: "Hello! I'm Angel Velazquez, a dedicated Fullstack Developer with a passion for creating innovative digital solutions. With a strong foundation in both " +
+                    "frontend and backend technologies, I specialize in building responsive and user-friendly web applications. My expertise includes working with frameworks like React " +
+                    "and Spring Boot, as well as databases such as MongoDB and MySQL. I thrive in collaborative environments and enjoy tackling complex challenges to deliver high-quality " +
+                    "software. When I'm not coding, I love exploring new technologies and staying updated with industry trends. Let's connect and create something amazing together!",
                 education: "Education",
                 experience: "Experience",
                 skills: "Skills",
                 certifications: "Certifications",
                 languages: "Languages",
                 contact_me: "Contact Me",
-                    degree_1: "Bachelor in Computer Systems Engineering (2020 - 2025)",
-                    school_1: "Technological Institute of Higher Studies of Cuautitlan Izcalli",
-                    degree_3: "Bachelor in Computer Engineering",
-                    school_2: "National Polytechnic Institute | 2018 - 2020 (Incomplete)",
-                    degree_5: "Technician in Informatics",
-                    school_3: "CBT Gabriel V Alcocer | 2015 - 2018",
-                    course_1: "Course on Application Containerization using Docker on Linux | Complutense University of Madrid",
-                    course_2: "Course on Container Security: Docker and Kubernetes",
+                contact_subtitle: "Let's Connect and Create Something Amazing Together!",
+                degree_1: "Bachelor in Computer Systems Engineering (2020 - 2025)",
+                school_1: "Technological Institute of Higher Studies of Cuautitlan Izcalli",
+                degree_3: "Bachelor in Computer Engineering",
+                school_2: "National Polytechnic Institute | 2018 - 2020 (Incomplete)",
+                degree_5: "Technician in Informatics",
+                school_3: "CBT Gabriel V Alcocer | 2015 - 2018",
+                course_1: "Course on Application Containerization using Docker on Linux | Complutense University of Madrid",
+                course_2: "Course on Container Security: Docker and Kubernetes",
+                name: "name",
+                name_placeholder: "Your Name",
+                email_placeholder: "example@email.com",
+                message_placeholder: "Your Message",
             }
         },
         es: {
@@ -78,27 +83,31 @@ i18next.use(initReactI18next).init({
                 p4_desc: "Este proyecto es una API Rest desarrollada con Spring boot y Spring Security que permite gestionar usuarios y sus tareas " +
                     "asociadas. implementa autenticacion y autorizacion con JWT. Orquestrado con Docker. Actualmente esta API no cuenta con una interfaz " +
                     "de usuario ya que se encuentra en desarrollo.",
-                about_subtitle:"Un Desarrollador Apasionado Creando Experiencias Digitales",
-                about_desc: " ¡Hola! Soy Angel Velazquez, un desarrollador Fullstack dedicado con pasión por crear soluciones digitales innovadoras. Con una sólida base en tecnologías "+ 
-                "tanto de frontend como de backend, me especializo en construir aplicaciones web responsivas y fáciles de usar. Mi experiencia incluye trabajar con frameworks como React" + 
-                " y Spring Boot, así como bases de datos como MongoDB y MySQL. Me desenvuelvo bien en entornos colaborativos y disfruto enfrentando desafíos complejos para entregar software"+
-                " de alta calidad. Cuando no estoy programando, me encanta explorar nuevas tecnologías y mantenerme actualizado con las tendencias de la industria. ¡Conectemos y creemos algo"+
-                "increíble juntos!",
+                about_subtitle: "Un Desarrollador Apasionado Creando Experiencias Digitales",
+                about_desc: " ¡Hola! Soy Angel Velazquez, un desarrollador Fullstack dedicado con pasión por crear soluciones digitales innovadoras. Con una sólida base en tecnologías " +
+                    "tanto de frontend como de backend, me especializo en construir aplicaciones web responsivas y fáciles de usar. Mi experiencia incluye trabajar con frameworks como React" +
+                    " y Spring Boot, así como bases de datos como MongoDB y MySQL. Me desenvuelvo bien en entornos colaborativos y disfruto enfrentando desafíos complejos para entregar software" +
+                    " de alta calidad. Cuando no estoy programando, me encanta explorar nuevas tecnologías y mantenerme actualizado con las tendencias de la industria. ¡Conectemos y creemos algo" +
+                    "increíble juntos!",
                 education: "Educación",
                 experience: "Experiencia",
                 skills: "Habilidades",
                 certifications: "Certificaciones",
                 languages: "Idiomas",
                 contact_me: "Contáctame",
-                    degree_1: "Ingeniería en Sistemas Computacionales (2020 - 2025)",
-                    school_1: "Tecnológico de Estudios Superiores de Cuautitlán Izcalli",
-                    degree_3: "Ingeniería en Computación",
-                    school_2: "Instituto Politécnico Nacional | 2018 - 2020 (Trunco)",
-                    degree_5: "Técnico en Informática",
-                    school_3: "CBT Gabriel V Alcocer | 2015 - 2018",
-                    course_1: "Curso de contenerización de aplicaciones usando Docker en Linux | Universidad Complutense de Madrid",
-                    course_2: "Curso de Seguridad en Contenedores: Docker y Kubernetes",
-
+                contact_subtitle: "¡Conectemos y creemos algo increíble juntos!",
+                degree_1: "Ingeniería en Sistemas Computacionales (2020 - 2025)",
+                school_1: "Tecnológico de Estudios Superiores de Cuautitlán Izcalli",
+                degree_3: "Ingeniería en Computación",
+                school_2: "Instituto Politécnico Nacional | 2018 - 2020 (Trunco)",
+                degree_5: "Técnico en Informática",
+                school_3: "CBT Gabriel V Alcocer | 2015 - 2018",
+                course_1: "Curso de contenerización de aplicaciones usando Docker en Linux | Universidad Complutense de Madrid",
+                course_2: "Curso de Seguridad en Contenedores: Docker y Kubernetes",
+                name: "nombre",
+                name_placeholder: "Tu Nombre",
+                email_placeholder: "ejemplo@correo.com",
+                message_placeholder: "Tu Mensaje",
             }
         }
     }
