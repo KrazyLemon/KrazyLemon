@@ -4,5 +4,26 @@
     font-family: 'Roboto', sans-serif;
     scroll-behavior: smooth;
     overflow-x: hidden;
-    /* background: #e1dfdd; */
+}
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #000;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #fff;
+    
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #111111;
 }

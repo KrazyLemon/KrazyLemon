@@ -1,4 +1,3 @@
-import { Icon } from "@iconify/react";
 
 export default function Selector({ value, onChange }) {
   const options = [
@@ -7,13 +6,13 @@ export default function Selector({ value, onChange }) {
   ];
 
   return (
-    <div className=" rounded-xs p-3 bg-gray-300 ">
+    <div className="rounded-xl p-3 flex items-center gap-2 border border-white/20 hover:bg-white/20  backdrop-blur-xl shadow-lg">
       <select
-        className="border-0 outline-0 cursor-pointer"
+        className="border-0  outline-0 cursor-pointer "
         value={value}
         onChange={(e) => onChange(e.target.value)}>
         {options.map((option) => (
-          <option key={option.value} value={option.value} className="p-2">
+          <option key={option.value} value={option.value} className="p-2 bg-white/10 text-black backdrop-blur-2xl">
             {option.label}
           </option>
         ))}

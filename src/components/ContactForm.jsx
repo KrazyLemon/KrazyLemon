@@ -22,18 +22,18 @@ export default function ContactForm() {
 
         // 🔹 Validación simple
         if (!nombre || !email || !mensaje) {
-            setStatus("❌ Todos los campos son obligatorios");
+            setStatus("Todos los campos son obligatorios");
             return;
         }
         if (!captchaValue) {
-            setStatus("❌ Por favor verifica el captcha");
+            setStatus("Por favor verifica el captcha");
             return;
         }
 
         // Validar email básico
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (!emailRegex.test(email)) {
-            setStatus("❌ Ingresa un correo válido");
+            setStatus("Ingresa un correo válido");
             return;
         }
 
@@ -48,12 +48,12 @@ export default function ContactForm() {
                 "fB6eBZ1RQb8jqjzwY"    // 🔹 reemplaza con tu public key
             )
             .then(() => {
-                setStatus("✅ ¡Mensaje enviado con éxito!");
+                setStatus("¡Mensaje enviado con éxito!");
                 form.reset();
                 window.grecaptcha.reset(); // Resetear el captcha
             })
             .catch((err) => {
-                setStatus("❌ Error al enviar: " + err.text);
+                setStatus("Error al enviar: " + err.text);
             })
             .finally(() => {
                 setLoading(false);

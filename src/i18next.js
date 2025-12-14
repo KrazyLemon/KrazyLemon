@@ -24,7 +24,7 @@ i18next.use(initReactI18next).init({
                 p1_title: "School Schedule Management System",
                 p1_desc: "This project is a school schedule management system developed with React, Node.js, and MongoDB." +
                     " It allows administrators to efficiently create and manage schedules for students and teachers.",
-                p2_title: "IoT Irrigation System connected to a Mobile App",
+                p2_title: "Irrigation System connected to a Mobile App",
                 p2_desc: "This school project is an automated irrigation system that uses moisture sensors and a mobile app" +
                     " to efficiently control plant watering.",
                 p3_title: "Website for a Trading Company of Industrial Products",
@@ -45,18 +45,20 @@ i18next.use(initReactI18next).init({
                 languages: "Languages",
                 contact_me: "Contact Me",
                 contact_subtitle: "Let's Connect and Create Something Amazing Together!",
-                degree_1: "Bachelor in Computer Systems Engineering (2020 - 2025)",
-                school_1: "Technological Institute of Higher Studies of Cuautitlan Izcalli",
+                degree_1: "Bachelor's Degree in Computer Systems Engineering ",
+                school_1: "Tecnológico de Estudios Superiores de Cuautitlán Izcalli | 2020 - 2025",
                 degree_3: "Bachelor in Computer Engineering",
-                school_2: "National Polytechnic Institute | 2018 - 2020 (Incomplete)",
-                degree_5: "Technician in Informatics",
+                school_2: "Instituto Politecnico Nacional | 2018 - 2020 (Incomplete)",
+                degree_5: "Technician Degree in Informatics",
                 school_3: "CBT Gabriel V Alcocer | 2015 - 2018",
-                course_1: "Course on Application Containerization using Docker on Linux | Complutense University of Madrid",
+                course_1: "Course on Application Containerization using Docker on Linux ",
+                school_4: "Universidad Complutense de Madrid | 2025",
                 course_2: "Course on Container Security: Docker and Kubernetes",
                 name: "name",
                 name_placeholder: "Your Name",
                 email_placeholder: "example@email.com",
                 message_placeholder: "Your Message",
+                coming_soon: "Coming Soon",
             }
         },
         es: {
@@ -73,7 +75,7 @@ i18next.use(initReactI18next).init({
                 p1_title: "Sistema de Gestion de Horarios Escolares",
                 p1_desc: "Este proyecto es un sistema de gestion de horarios escolares desarrollado con React,Node.js y "
                     + "MongoDB. Permite a los administradores crear y gestionar horarios para estudiantes y profesores de manera eficiente.",
-                p2_title: "Sistema de Riego(IoT) conectado a una Aplicacion Movil",
+                p2_title: "Sistema de Riego conectado a una Aplicacion Movil",
                 p2_desc: "Este proyecto escolar es un sistema de riego automatizado que utiliza sensores de humedad y una aplicación móvil" +
                     "para controlar el riego de plantas de manera eficiente.",
                 p3_title: "Pagina web para una Comercializadora de productos para la industria",
@@ -96,18 +98,20 @@ i18next.use(initReactI18next).init({
                 languages: "Idiomas",
                 contact_me: "Contáctame",
                 contact_subtitle: "¡Conectemos y creemos algo increíble juntos!",
-                degree_1: "Ingeniería en Sistemas Computacionales (2020 - 2025)",
-                school_1: "Tecnológico de Estudios Superiores de Cuautitlán Izcalli",
+                degree_1: "Ingeniería en Sistemas Computacionales ",
+                school_1: "Tecnológico de Estudios Superiores de Cuautitlán Izcalli | 2020 - 2025",
                 degree_3: "Ingeniería en Computación",
                 school_2: "Instituto Politécnico Nacional | 2018 - 2020 (Trunco)",
                 degree_5: "Técnico en Informática",
                 school_3: "CBT Gabriel V Alcocer | 2015 - 2018",
-                course_1: "Curso de contenerización de aplicaciones usando Docker en Linux | Universidad Complutense de Madrid",
+                course_1: "Curso de contenerización de aplicaciones usando Docker en Linux ",
+                school_4: "Universidad Complutense de Madrid | 2025",
                 course_2: "Curso de Seguridad en Contenedores: Docker y Kubernetes",
                 name: "nombre",
                 name_placeholder: "Tu Nombre",
                 email_placeholder: "ejemplo@correo.com",
                 message_placeholder: "Tu Mensaje",
+                coming_soon: "Próximamente",
             }
         }
     }
