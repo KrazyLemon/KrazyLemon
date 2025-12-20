@@ -89,8 +89,7 @@ i18next.use(initReactI18next).init({
                 about_desc: " ¡Hola! Soy Angel Velazquez, un desarrollador Fullstack dedicado con pasión por crear soluciones digitales innovadoras. Con una sólida base en tecnologías " +
                     "tanto de frontend como de backend, me especializo en construir aplicaciones web responsivas y fáciles de usar. Mi experiencia incluye trabajar con frameworks como React" +
                     " y Spring Boot, así como bases de datos como MongoDB y MySQL. Me desenvuelvo bien en entornos colaborativos y disfruto enfrentando desafíos complejos para entregar software" +
-                    " de alta calidad. Cuando no estoy programando, me encanta explorar nuevas tecnologías y mantenerme actualizado con las tendencias de la industria. ¡Conectemos y creemos algo" +
-                    "increíble juntos!",
+                    " de alta calidad. Cuando no estoy programando, me encanta explorar nuevas tecnologías y mantenerme actualizado con las tendencias de la industria.",
                 education: "Educación",
                 experience: "Experiencia",
                 skills: "Habilidades",

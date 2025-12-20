@@ -10,7 +10,7 @@ export default function ContactForm() {
     const captha = "6LeHbb4rAAAAAC6NtCVXU73NED2A21YeXIQEec9V";
     const [captchaValue, setCaptchaValue] = useState(null);
 
-    const {t} = useTranslation();
+    const { t } = useTranslation();
 
     const sendEmail = (e) => {
         e.preventDefault();
@@ -61,39 +61,37 @@ export default function ContactForm() {
     };
 
     return (
-        <form  onSubmit={sendEmail} className="flex flex-col gap-3 w-96 p-4 bg-white shadow-lg rounded-xl">
-            <h2 className="text-xl font-semibold text-gray-700 text-center">{t("contact")}</h2>
-
+        <form onSubmit={sendEmail} className="flex flex-col  gap-3 w-96 p-4 border border-white/20 bg-white/10 text-white  rounded-xl">
+            <h2 className="text-xl font-semibold text-center">{t("contact")}</h2>
             <input
                 type="text"
                 name="nombre"
                 placeholder={t("name_placeholder")}
-                className="border p-2 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="border border-white/20 p-2 rounded-xl text-white  focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
             <input
                 type="email"
                 name="email"
                 placeholder={t("email_placeholder")}
-                className="border p-2 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="border border-white/20 p-2 rounded-xl text-white  focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
             <textarea
                 name="mensaje"
                 placeholder={t("message_placeholder")}
                 rows="4"
-                className="border p-2 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="h-2/6 border border-white/20 p-2 rounded-xl text-white  focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
-
             <ReCAPTCHA
                 sitekey={captha}   // cambia por tu clave pública
                 onChange={setCaptchaValue}
+                className="rounded-xl p-2 border border-white/20 flex justify-center items-center"
             />
-
             <button
                 type="submit"
                 disabled={loading}
-                className={`p-2 rounded text-white transition ${loading
-                    ? "bg-gray-400 cursor-not-allowed"
-                    : "bg-blue-600 hover:bg-blue-700"
+                className={`p-2 rounded-xl bg-white/10 border border-white/20  ${loading
+                    ? " cursor-not-allowed"
+                    : " cursosr-pointer hover:bg-white/30"
                     }`}
             >
                 {loading ? "Enviando..." : "Enviar"}

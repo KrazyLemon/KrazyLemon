@@ -1,22 +1,36 @@
 import Button from "../components/Button";
 import Footer from "../components/Footer";
 import { useTranslation } from "react-i18next";
-import Skill from "../components/Skill";
 import ContactForm from "../components/ContactForm";
 import SlideShow from "../components/SlideShow";
-
-
+import { useState,useEffect,useRef } from "react";
+import { Icon } from "@iconify/react/dist/iconify.js";
 
 export default function HomePage() {
 
+    const [isFullDescriptionHidden, setIsFullDescriptionHidden] = useState(true);
+    const descRef = useRef(null);
+    const [maxH, setMaxH] = useState('4.5rem');
+
     const { t } = useTranslation();
+
+    const HandleDescriptionIsHidden = (val) => {
+        if (typeof val === "boolean") setIsFullDescriptionHidden(val);
+        else setIsFullDescriptionHidden((prev) => !prev);
+    };
+
+    useEffect(() => {
+        if (!descRef.current) return;
+        setMaxH(isFullDescriptionHidden ? '4.5rem' : `${descRef.current.scrollHeight}px`);
+    }, [isFullDescriptionHidden]);
+
 
 
     return (
         <>
             {/* Banner Section */}
-            <div id="top" className="flex justify-center items-center h-screen w-full bg-linear-to-r ">
-                <video src="/background.mp4" autoPlay loop muted className="absolute w-full h-full object-cover brightness-50 " ></video>
+            <div id="top" className="flex justify-center items-center h-screen w-full bg-linear-to-r from-blue-950/40 via-20% via-black/80 to-95% to-red-950/50 relative overflow-hidden ">
+                {/* <video src="/background.mp4" autoPlay loop muted className="absolute w-full h-full object-cover brightness-50 " ></video> */}
                 <div className="flex z-20 w-3/4 justify-between items-stretch text-white">
                     <div className="flex ps-2 flex-col justify-between w-full" >
                         <div>
@@ -79,77 +93,46 @@ export default function HomePage() {
                 <h1 className="text-5xl overflow-hidden py-3 font-bold z-40 text-white">{t("about")}</h1>
                 <h2 className="text-xl overflow-hidden font-light text-center pb-2 text-white ">{t("about_subtitle")}</h2>
 
-                <div className="flex w-full justify-between h-[800px]">
-                    <div className="relative h-full bg-white/10 backdrop-blur-xl border border-white/10 shadow-lg rounded-2xl text-white flex flex-col items-end">
-                        <img src="/vertical-placeholder.webp" alt="foto" className="rounded-xl " width={"750"} />
-                        <p className="absolute w-full h-full flex flex-col items-center justify-end p-2 text-pretty text-lg font-light bg-linear-to-t from-black/80 to-black/0 rounded-2xl">
-                            {t("about_desc")}
-                        </p>
+                <div className="flex w-full justify-between h-[800px] gap-4">
+                    {/* About Me Izq */}
+                    <div className="relative h-full w-1/3 bg-white/10 backdrop-blur-xl border border-white/10 shadow-lg rounded-2xl text-white flex flex-col items-end">
+                        <img src="/vertical-placeholder.webp" alt="foto" className="p-4 rounded-4xl shadow-lg" />
+                        <form className="absolute w-full h-full p-4 flex flex-col items-center justify-end  bg-linear-to-t from-black/90 to-black/0 rounded-2xl">
+                            {
+                                isFullDescriptionHidden ? (
+                                    <button
+                                        type="button"
+                                        onClick={() => HandleDescriptionIsHidden(false)}
+                                        className="cursor-pointer z-40 mb-2 border border-white/20 rounded-full p-2 bg-white/10 hover:bg-white/20 transition-all duration-500 flex items-center justify-center"
+                                    >
+                                        <Icon icon="mdi-light:chevron-double-down" width="24" height="24" className="animate-pulse" />
+                                    </button>) : (
+                                    <button
+                                        type="button"
+                                        onClick={() => HandleDescriptionIsHidden(true)}
+                                        className=""
+                                    >
+                                        <Icon icon="mdi-light:chevron-double-up" width="24" height="24" className="cursor-pointer z-40 mb-2 border border-white/20 rounded-full p-2 bg-white/10 hover:bg-white/20 transition-all duration-300 flex items-center justify-center" />
+                                    </button>
+                                )
+                            }
+                            <p
+                                ref={descRef}
+                                className="p-5 text-pretty text-lg font-light"
+                                style={{
+                                    maxHeight: maxH,
+                                    overflow: 'hidden',
+                                    transition: 'max-height 500ms ease'
+                                }}
+                            >
+                                {t("about_desc")}
+                            </p>
+                        </form>
                     </div>
-
-                    <div className="flex flex-col justify-between w-full bg-black text-white p-4 rounded ms-4">
-                        <div className="flex flex-col ">
-                            <h1 className="text-2xl font-semibold mb-2">{t("education")}</h1>
-                            <ul className="list-disc list-inside mb-2">
-                                <li className="">{t("degree_1")} <p className="italic font-light pb-1">{t("school_1")}</p></li>
-                                <li className="">{t("degree_3")} <p className="italic font-light pb-1">{t("school_2")}</p></li>
-                                <li className="">{t("degree_5")} <p className="italic font-light pb-1">{t("school_3")}</p></li>
-                            </ul>
-                            <h1 className="text-2xl font-semibold">{t("certifications")}</h1>
-                            <ul className="list-disc list-inside">
-                                <li className="font-semibold bg-white/5 border border-white/10 rounded-xl p-2 backdrop-blur-md mb-2">{t("course_1")}<p className="italic font-light pb-1">{t("school_4")}</p></li>
-                                <li className="font-semibold bg-white/5 border border-white/10 rounded-xl p-2 backdrop-blur-md mb-2">{t("course_2")}<p className="italic font-light pb-1">{t("school_4")}</p></li>
-                            </ul>
-                        </div>
-                        <div className="flex flex-col gap-2">
-                            <h1 className="text-3xl font-semibold mb-4">{t("skills")}</h1>
-                            <div className="grid grid-cols-12 grid-rows-4 gap-2">
-                                <div className="border bg-white/20 rounded p-2 col-span-5 row-span-2 ">
-                                    <h1>Backend</h1>
-                                    <div className="flex">
-                                        <Skill name="Java" icon="skill-icons:java-light" />
-                                        <Skill name="Python" icon="skill-icons:python-light" />
-                                        <Skill name="PHP" icon="skill-icons:php-light" />
-                                        <Skill name="Express" icon="skill-icons:expressjs-light" />
-                                    </div>
-                                </div>
-                                <div className="border rounded p-2 col-span-7 row-span-2 ">
-                                    <h1>Frontend</h1>
-                                    <div className="flex">
-                                        <Skill name="React" icon="skill-icons:react-light" />
-                                        <Skill name="Angular" icon="skill-icons:angular-light" />
-                                        <Skill name="Vue" icon="skill-icons:vuejs-light" />
-                                        <Skill name="Vite" icon="skill-icons:vite-light" />
-                                        <Skill name="Tailwind" icon="skill-icons:tailwindcss-light" />
-                                        <Skill name="HTML" icon="skill-icons:html" />
-                                        <Skill name="CSS" icon="skill-icons:css" />
-                                        <Skill name="JavaScript" icon="skill-icons:javascript" />
-                                    </div>
-                                </div>
-                                <div className="border rounded p-2 col-span-4 row-span-2 ">
-                                    <h1>Databases</h1>
-                                    <div className="flex">
-                                        <Skill name="MySQL" icon="skill-icons:mysql-light" />
-                                        <Skill name="PostgreSQL" icon="skill-icons:postgresql-light" />
-                                        <Skill name="MongoDB" icon="skill-icons:mongodb" />
-                                    </div>
-                                </div>
-                                <div className="border rounded p-2 col-span-8 row-span-2 ">
-                                    <h1>DevOps</h1>
-                                    <div className="flex ">
-                                        <Skill name="Docker" icon="skill-icons:docker" />
-
-                                        <Skill name="Postman" icon="skill-icons:postman" />
-                                        <Skill name="Git" icon="skill-icons:git" />
-                                        <Skill name="GitHub" icon="skill-icons:github-light" />
-                                        <Skill name="CI/CD" icon="skill-icons:githubactions-light" />
-                                        <Skill name="Aws" icon="skill-icons:aws-light" />
-                                        <Skill name="Nginx" icon="skill-icons:nginx" />
-                                        <Skill name="Linux" icon="skill-icons:linux-light" />
-
-                                    </div>
-                                </div>
-                            </div>
+                    {/* About Me Der */}
+                    <div className="h-full w-2/3 bg-white/10 backdrop-blur-xl border border-white/10 shadow-lg rounded-2xl text-white items-end">
+                        <div className="w-full h-1/2 p-4 flex flex-col">
+                          
                         </div>
                     </div>
                 </div>
@@ -159,7 +142,16 @@ export default function HomePage() {
             <div id="contact" className="flex flex-col h-screen justify-center w-3/4 items-center mx-auto ">
                 <h1 className="text-5xl overflow-hidden py-3 font-bold z-40 text-white " >{t("contact")}</h1>
                 <h2 className="text-xl overflow-hidden font-light text-center pb-2 text-white   ">{t("contact_subtitle")}</h2>
-                <ContactForm />
+                <div className="flex ">
+                    <ContactForm />
+                    <div className="h-8 ">
+                        {/* Spacer div to create gap between form and image */}
+                    </div>
+                    <div className="hidden md:flex ms-8">
+                        <img src="/banner.webp" alt="contact" className="h-[600px] object-cover rounded-xl shadow-lg " />
+                    </div>
+                </div>
+                
             </div>
             <Footer />
         </>
