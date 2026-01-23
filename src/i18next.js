@@ -43,6 +43,7 @@ i18next.use(initReactI18next).init({
                 skills: "Skills",
                 certifications: "Certifications",
                 languages: "Languages",
+                progamming:"Programming Languages",
                 contact_me: "Contact Me",
                 contact_subtitle: "Let's Connect and Create Something Amazing Together!",
                 degree_1: "Bachelor's Degree in Computer Systems Engineering ",
@@ -111,6 +112,7 @@ i18next.use(initReactI18next).init({
                 email_placeholder: "ejemplo@correo.com",
                 message_placeholder: "Tu Mensaje",
                 coming_soon: "Próximamente",
+                progamming:"Lenguajes de Programación",
             }
         }
     }
