@@ -27,7 +27,7 @@ export default function Slide({ slide, handleModalButton}) {
                     }
                     <button 
                         onClick={handleModalButton}
-                        lassName="flex self-end rounded-full items-center w-fit gap-2 py-2 px-2 text-white
+                        className="flex self-end rounded-full items-center w-fit gap-2 py-2 px-2 text-white
                                 bg-white/10 backdrop-blur-xl transition-opacity duration-300 hover:bg-white/20 border border-white/10 " >
                             <Icon icon="iconoir:arrow-up-right" width="24" height="24" />
                     </button>
