@@ -1,13 +1,12 @@
 import { useTranslation } from "react-i18next";
 import { Icon } from "@iconify/react";
+import { useState } from "react";
 
-
-export default function Slide({ slide }) {
+export default function Slide({ slide, handleModalButton}) {
 
     const { t } = useTranslation();
-
     const { image, title, description, technologies, link, bgColor } = slide;
-
+    
     return (
         <div className={`relative w-full h-full flex flex-col justify-center items-center overflow-hidden rounded-xl transition-color duration-700`} >
             {/* background image de la slide */}
@@ -26,12 +25,13 @@ export default function Slide({ slide }) {
                                 <Icon icon="iconoir:warning-triangle" width="24" height="24" />
                             </span>
                     }
-                    <button className="flex self-end rounded-full items-center w-fit gap-2 py-2 px-2 text-white
+                    <button 
+                        onClick={handleModalButton}
+                        lassName="flex self-end rounded-full items-center w-fit gap-2 py-2 px-2 text-white
                                 bg-white/10 backdrop-blur-xl transition-opacity duration-300 hover:bg-white/20 border border-white/10 " >
                             <Icon icon="iconoir:arrow-up-right" width="24" height="24" />
                     </button>
                 </div>
-
                 <div className="flex w-full h-fit justify-between items-center " >
                     <div className="flex flex-col w-1/2 self-start text-white gap-1" >
                         <h1 className="font-semibold text-5xl self-start overflow-hidden ">{title}</h1>
@@ -45,6 +45,7 @@ export default function Slide({ slide }) {
                     </div>
                 </div>
             </div>
+            
         </div>
     );
 }

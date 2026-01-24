@@ -71,7 +71,7 @@ export default function NavBar() {
 
     return (
         <div className={`w-full min-h-screen bg-gradient-to-b from-black from-30%  transition-colors duration-[2000ms] ease-in-out to-black ${bgColor}`}>
-            <div className=" w-3/4 flex justify-between fixed top-2 left-1/2 -translate-x-1/2 z-30">
+            <div className=" w-3/4 flex justify-between fixed top-2 left-1/2 -translate-x-1/2 z-50">
                 <a href="#top" className={`flex *: py-2 items-center px-3 font-medium transition-all duration-300 text-white border border-white/0 
                         ${scrolled
                         ? "bg-white/10 backdrop-blur-xl inset-shadow-xs drop-shadow-xl/20  inset-shadow-white rounded-xl border-white/20 hover:bg-white/20 "

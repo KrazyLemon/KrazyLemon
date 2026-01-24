@@ -5,6 +5,7 @@ import ContactForm from "../components/ContactForm";
 import SlideShow from "../components/SlideShow";
 import { useState, useEffect, useRef } from "react";
 import { Icon } from "@iconify/react/dist/iconify.js";
+import Modal from "../components/Modal";
 
 export default function HomePage() {
 
@@ -12,12 +13,25 @@ export default function HomePage() {
     const descRef = useRef(null);
     const [maxH, setMaxH] = useState('4.5rem');
 
+    const [slide, setSlide] = useState({});
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
     const { t } = useTranslation();
 
     const HandleDescriptionIsHidden = (val) => {
         if (typeof val === "boolean") setIsFullDescriptionHidden(val);
         else setIsFullDescriptionHidden((prev) => !prev);
     };
+
+    const handleSelectedSlide = (slide) => {
+        setSlide(slide);
+    };
+
+    const handleModalButton = (e) => {
+        e.preventDefault();
+        setIsModalOpen(!isModalOpen);
+    }
+
 
     useEffect(() => {
         if (!descRef.current) return;
@@ -47,7 +61,7 @@ export default function HomePage() {
             </div>
             {/* Work Section */}
             <div id="work" className="flex flex-col justify-center items-center w-3/4 h-screen mx-auto ">
-                <h1 className="text-5xl overflow-hidden py-3 font-bold z-40 text-white">{t("work")}</h1>
+                <h1 className="text-5xl overflow-hidden py-3 font-bold z-30 text-white">{t("work")}</h1>
                 <h2 className="text-xl overflow-hidden font-light pb-2 text-white">{t("work_subtitle")}</h2>
                 <div className=" h-[800px] w-full border border-white/20 bg-white/10 rounded-xl shadow-lg">
                     <SlideShow
@@ -85,8 +99,17 @@ export default function HomePage() {
                                 bgColor: "bg-yellow-700"
                             },
                         ]}
+                        handleSelectedSlide={handleSelectedSlide}
+                        handleModalButton={handleModalButton}
+                        isModalOpen={isModalOpen}
+                        setIsModalOpen={setIsModalOpen}
                     />
                 </div>
+                <Modal
+                    slide={slide}
+                    isModalOpen={isModalOpen}
+                    handleModalButton={handleModalButton}
+                />
             </div>
             {/* About Section */}
             <div id="about" className="flex flex-col justify-center items-center w-3/4 h-screen mx-auto ">
@@ -180,7 +203,7 @@ export default function HomePage() {
                                         <Icon icon="skill-icons:python-dark" width={50} height={50} />
                                         <h4 className="flex justify-center text-xs pt-1">Python</h4>
                                     </div>
-                                   <div className="flex flex-col items-center">
+                                    <div className="flex flex-col items-center">
                                         <Icon icon="skill-icons:cpp" width={50} height={50} />
                                         <h4 className="flex justify-center text-xs pt-1">C++</h4>
                                     </div>
@@ -270,7 +293,7 @@ export default function HomePage() {
                                 </div>
                             </li>
                         </ul>
-                        
+
                     </div>
 
                 </div>
