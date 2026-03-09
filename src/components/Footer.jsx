@@ -1,7 +1,8 @@
 
 const Footer = () => (
-    <footer className="bg-gray-900 text-white text-center py-4  w-full mt-8">
-        <p>&copy; {new Date().getFullYear()} KrazyLemon. Todos los derechos reservados.</p>
+    <footer className="bg-gray-900 text-white text-center py-4 w-full mt-8 text-sm md:text-md">
+        <p>&copy; {new Date().getFullYear()}  Angel Velazquez.  Built with React.
+            Icons by Iconify, Material Design Icons, Skill Icons and Iconoir.</p>
     </footer>
 );
 

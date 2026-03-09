@@ -24,10 +24,10 @@ export default function SlideShow({ slides, handleModalButton, handleSelectedSli
                 slide={slides[slideIndex]}
                 handleModalButton={handleModalButton}
             />
-            <a className="cursor-pointer absolute top-1/2 left-5 w-auto -mt-6 p-2 bg-white/10 backdrop-blur-xl shadow-lg rounded-full border border-white/20 text-white font-bold text-2xl hover:bg-white/20" onClick={moveSlide(-1)}>
+            <a className="cursor-pointer absolute md:top-1/2 top-1/3 left-5 w-auto -mt-6 p-2 bg-white/10 backdrop-blur-xl shadow-lg rounded-full border border-white/20 text-white font-bold text-2xl hover:bg-white/20" onClick={moveSlide(-1)}>
                 <Icon icon="iconoir:arrow-left" width="24" height="24" />
             </a>
-            <a className="cursor-pointer absolute top-1/2 right-5 w-auto -mt-6 p-2 bg-white/10 backdrop-blur-xl shadow-lg rounded-full border border-white/20 text-white font-bold text-2xl hover:bg-white/20" onClick={moveSlide(1)} >
+            <a className="cursor-pointer absolute md:top-1/2 top-1/3 right-5 w-auto -mt-6 p-2 bg-white/10 backdrop-blur-xl shadow-lg rounded-full border border-white/20 text-white font-bold text-2xl hover:bg-white/20" onClick={moveSlide(1)} >
                 <Icon icon="iconoir:arrow-right" width="24" height="24" />
             </a>
         </div>

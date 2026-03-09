@@ -61,7 +61,7 @@ export default function ContactForm() {
     };
 
     return (
-        <form onSubmit={sendEmail} className="flex flex-col  gap-3 w-96 p-4 border border-white/20 bg-white/10 text-white  rounded-xl">
+        <form onSubmit={sendEmail} className="flex flex-col gap-3 w-full p-4 border border-white/20 bg-white/10 text-white  rounded-xl">
             <h2 className="text-xl font-semibold text-center">{t("contact")}</h2>
             <input
                 type="text"
@@ -84,7 +84,7 @@ export default function ContactForm() {
             <ReCAPTCHA
                 sitekey={captha}   // cambia por tu clave pública
                 onChange={setCaptchaValue}
-                className="rounded-xl p-2 border border-white/20 flex justify-center items-center"
+                className="p-2 flex justify-center items-center"
             />
             <button
                 type="submit"

@@ -35,9 +35,7 @@ i18next.use(initReactI18next).init({
                     " It implements authentication and authorization with JWT. Orchestrated with Docker. This API currently does not have a user interface as it is under development.",
                 about_subtitle: "A Passionate Developer Crafting Digital Experiences",
                 about_desc: "Hello! I'm Angel Velazquez, a dedicated Fullstack Developer with a passion for creating innovative digital solutions. With a strong foundation in both " +
-                    "frontend and backend technologies, I specialize in building responsive and user-friendly web applications. My expertise includes working with frameworks like React " +
-                    "and Spring Boot, as well as databases such as MongoDB and MySQL. I thrive in collaborative environments and enjoy tackling complex challenges to deliver high-quality " +
-                    "software. When I'm not coding, I love exploring new technologies and staying updated with industry trends. Let's connect and create something amazing together!",
+                    "frontend and backend technologies, I specialize in building responsive and user-friendly web applications.  Let's connect and create something amazing together!",
                 education: "Education",
                 experience: "Experience",
                 skills: "Skills",
@@ -89,8 +87,7 @@ i18next.use(initReactI18next).init({
                 about_subtitle: "Un Desarrollador Apasionado Creando Experiencias Digitales",
                 about_desc: " ¡Hola! Soy Angel Velazquez, un desarrollador Fullstack dedicado con pasión por crear soluciones digitales innovadoras. Con una sólida base en tecnologías " +
                     "tanto de frontend como de backend, me especializo en construir aplicaciones web responsivas y fáciles de usar. Mi experiencia incluye trabajar con frameworks como React" +
-                    " y Spring Boot, así como bases de datos como MongoDB y MySQL. Me desenvuelvo bien en entornos colaborativos y disfruto enfrentando desafíos complejos para entregar software" +
-                    " de alta calidad. Cuando no estoy programando, me encanta explorar nuevas tecnologías y mantenerme actualizado con las tendencias de la industria.",
+                    " y Spring Boot, así como bases de datos como MongoDB y MySQL. Me encanta explorar nuevas tecnologías y mantenerme actualizado con las tendencias de la industria.",
                 education: "Educación",
                 experience: "Experiencia",
                 skills: "Habilidades",
